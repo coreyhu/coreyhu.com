@@ -1,0 +1,26 @@
+body {
+    height: 100%;
+}
+
+#hero-text {
+    margin-bottom: 3%;
+    width: 60%;
+}
+
+#hero-buttons {
+    width: 50%;
+}
+
+#hero-buttons .button {
+    margin-left: 0;
+    margin-right: 4%;
+}
+
+#portfolio-button {
+    width: 20%;
+    margin: auto;
+}
+
+#footer-contact {
+    width: 50%;
+}
