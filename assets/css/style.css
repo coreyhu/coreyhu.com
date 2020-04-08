@@ -1,3 +1,5 @@
+/* font imports */
+
 @font-face {
     font-family: Urbanist;
     src: url('../fonts/Urbanist-Regular.woff2') format('woff2'),
@@ -34,15 +36,13 @@
 :root {
     --white:#ffffff;
     --grey:#bababa;
-    --offblack:#121112;
+    --offblack:#121212;
 }
-
 
 
 html {
     background-color: var(--offblack);
     font-size: 100%;
-    height: 100%;
 }
 
 body {
@@ -55,52 +55,28 @@ body {
 }
 
 header, section {
-    margin-top: 15%;
-    margin-bottom: 0%;
+    margin-top: 25%;
+    margin-bottom: 25%;
 }
 
-#nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0;
-}
 
-.nav-item {
-    list-style-type: none;
-    margin: 2%;
-}
-
-.nav-line {
-    width: 100%;
-    height: 3px;
-    background-color: var(--white);
-}
-
-.nav-item a{
-    -webkit-transition: ease-out 0.2s;
-    -moz-transition: ease-out 0.2s;
-    transition: ease-out 0.2s;
-    padding: 15% 20%;
-    
-}
-
-.nav-item a:hover {
-    color: var(--offblack);
-    background-color: var(--white);
-}
-
-a {
-    text-decoration: none;
-    font-weight: 600;
-}
+/* text styles */
 
 h1, h2, h3, h4, h5, h6, p, a {
     font-family: Urbanist, Arial, Helvetica, sans-serif;
     color: var(--white);
     margin-top: 0%;
     margin-bottom: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,14 +108,23 @@ h3 {
 }
 
 
+h4 {
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+/* button styles */
+
 .button {
-    padding: 1vh 1vh;
-    margin: 2vh 2vh;
+    padding: 1vh 1vw;
+    margin: 2vh 2vw;
     font-weight: 600;
 }
 
 .button:hover {
-    padding: 1.5vh 1.5vh;
+    padding: 1.5vh 1.5vw;
 }
 
 .button-primary {
@@ -180,6 +165,7 @@ h3 {
 
 
 
+/* card layouts */
 
 .card-container {
     width: 95%;
@@ -210,8 +196,6 @@ h3 {
 
 .img-card img {
     width: 100%;
-    height: 100%;
-
     overflow: hidden;
     display: block;
 }
@@ -242,6 +226,42 @@ h3 {
     border: 8px solid var(--white);
     width: 420px;
     margin: 10px;
+}
+
+
+/* header and footer options */
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    margin: 2vh 0;
+}
+
+.nav-item {
+    list-style-type: none;
+    margin: 2vh 2vw;
+}
+
+.nav-line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
+}
+
+.nav-item a{
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    padding: 15% 20%;
+    
+}
+
+.nav-item a:hover {
+    color: var(--offblack);
+    background-color: var(--white);
 }
 
 footer {
