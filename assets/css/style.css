@@ -170,73 +170,7 @@ nav {
     float: right;
 }
 
-#hamburger-icon {
-    position: relative;
-    display: inline;
-    vertical-align: middle;
-    width: 36px;
-    height: 36px;
-}
 
-#hamburger-icon span {
-    height: 2px;
-    width: 36px;
-    background: var(--light-grey);
-    display: block;
-    content: '';
-    position: absolute;
-    transition: all ease-out 0.2s;
-    transition-property: width, background-color, transform;
-}
-
-#hamburger-icon span.bar1 {
-    top: 30%;
-}
-
-#hamburger-icon span.bar2 {
-    top: 50%;
-
-}
-
-#hamburger-icon span.bar3 {
-    top: 70%; 
-}
-
-#hamburger-icon:hover > span {
-    background-color: var(--white);
-}
-
-#hamburger-icon:hover > span.bar3{
-    width: 18px;
-}
-
-#hamburger-icon:hover > span.bar2 {
-    width: 27px;
-}
-
-#hamburger-icon:hover {
-    cursor: pointer;
-}
-
-.menu-active span.bar1 {
-    transform: rotate(-48deg) translate(-8px, 8px);
-}
-  
-.menu-active span.bar2 {
-    width: 0px;
-}
-
-.menu-active span.bar3 {
-    transform: rotate(48deg) translate(-8px, -8px);    
-}
-
-#hamburger-icon.menu-active:hover > span.bar1, #hamburger-icon.menu-active:hover > span.bar3 {
-    width: 36px !important;
-}
-
-#hamburger-icon.menu-active:hover > span.bar2 {
-    width: 0 !important;
-}
 
 .nav-logo {
     background-color: var(--offblack);
