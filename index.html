@@ -4,81 +4,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/home.css">
+
         <title>Corey</title>
     </head>
-        
     <body>
 
-        <div id="content">
-            <nav>
-                <ul id="nav-bar">
-                    <li class="nav-line"></li> 
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="about.html">About</a></li>
-                    <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a href="contact.html">Contact</a></li>
-                  </ul>
-            </nav>    
+        <header>
+            <nav class="fixed">
+                <a class="nav-logo button nav-button drop-shadow" href="index.html">Ch</a>
 
+                <a id="hamburger-icon" class="button menu-button">
+                        <span class="drop-shadow"></span>
+                    </a>
+            </nav>
+        </header>
 
-            <header id="hero">
-                <div id="hero-text">
-                    <h1>Hi, I'm Corey</h1>
-                    <h2>Designer and deep learning engineer based in the San Francisco Bay Area</h2>
-                </div>
-                <div id="hero-buttons">
-                    <a class="button button-secondary" href="contact.html">+ get in touch </a>
-                    <a class="button button-primary" href="portfolio.html">+ my work </a>
-                </div>
-            </header>
+        <section id="hero">
+            <div id="hero-superheader" class="superheader horizontal-text"><span>creative</span> <span>science</span></div>
 
+            <div id="hero-subheader">
+                <h6>Hi, I'm Corey</h6>
+                <h3>Designer and Deep Learning Engineer. SF Bay Area.</h3>
+                
+                <a class="button button-secondary drop-shadow" href="contact.html">+ about me </a>
+                <a class="button button-secondary drop-shadow" href="portfolio.html">+ get in touch </a>
+            </div>
+            
+            <div id="scroll-bar-container">
+                <p class="scroll-indicator">scroll for portfolio</p>
+                <span class="scroll-bar"></span>
+                <span class="scroll-light"></span>
+            </div>
 
-            <section id="portfolio-sample">
-                <h1>Here's a byte of what I’ve done</h1>
-                <div class="card-container">
-                    <div class="card img-card">
-                        <h3 class="caption">The Urbanist Project</h3>
-                        <img src="https://via.placeholder.com/400x300.png">                        
-                    </div>
+        </section>
 
-                    <div class="card img-card">
-                        <h3 class="caption">Cal Hacks 6.0</h3>
-                        <img src="https://via.placeholder.com/400x300.png">                        
-                    </div>
-
-                    <div class="card img-card">
-                        <h3 class="caption">Daily Cal Rebranding</h3>
-                        <img src="https://via.placeholder.com/400x300.png">                        
-                    </div>
-
-                    <div class="card img-card">
-                        <h3 class="caption">Stanza</h3>
-                        <img src="https://via.placeholder.com/400x300.png">                        
-                    </div>
-
-                    <div class="card img-card">
-                        <h3 class="caption">INK Creative</h3>
-                        <img src="https://via.placeholder.com/400x300.png">                        
-                    </div>
+        <section id="portfolio">
+            <div id="portfolio-container">        
+                <h5>A byte of my work</h5>
+                <div>
                     
-                    <div class="card">
-                        <a id="portfolio-button" class="button button-secondary" href="portfolio.html">see more 🡒</a>
-                    </div>
                 </div>
-            </section>
+           </div>
 
-            <footer>
-                <div id="footer-contact">
-                    <h2>Let's get in touch!</h2>
-                    <h1>contact (at) coreyhu.com</h1>
-                    <br/>
-                    <h2>You can also find me on <a>LinkedIn</a>, <a>Github</a>, & <a>Behance</a>
-                    </h2>
-                </div>
-            </footer>
+        </section>
 
-        </div>
-    </body>        
+        
+        
 
+    </body>
 </html>
-
