@@ -1,6 +1,6 @@
 /* HERO SECTION */
 :root {
-    --superheader-font-size: 30vmin;
+    --superheader-font-size: 26vmin;
     --superheader-line-height: .8; 
     --scroll-indicator-line-height: 30vh;
     --scroll-indicator-light-height: 3vh;
@@ -14,11 +14,9 @@
     width: 2em;
     display: inline-block;
     height: 100vh;
-
     position: relative;
-    float: inline-start;
     z-index: 0;
-    bottom: 0%;
+    bottom: 2%;
     font-family: Urbanist, Arial, Helvetica, sans-serif;
     color: var(--grey);
     font-size: var(--superheader-font-size);
@@ -36,12 +34,14 @@
 #hero-superheader span {
     user-select: none;
     transition: color ease-in-out 0.2s;
+    width: calc(var(--superheader-line-height) * var(--superheader-font-size));
 }
 
 #hero-superheader span:hover {
     cursor: default;
     color: var(--white);
 }
+
 
 
 
@@ -65,9 +65,7 @@
     margin-bottom: 3vh;
 }
 
-
-
-#scroll-bar-container {
+#scroll-indicator {
     position: absolute;
     width: 36px; 
     height: 15vh;
@@ -77,28 +75,24 @@
 }
 
 @media only screen and (max-width: 767px) {
-    #hero-superheader {
-        height: 150vh;
-        bottom: 50%;
-        width: 1em;
-        font-size: 15vh;
-    }
 
     #hero-superheader {
         height: 150vh;
-        bottom: 50%;
+        bottom: 52%;
         width: 1em;
-        font-size: 15vh;
+        font-size: 12.5vh;
     }
 
     #hero-subheader {
-        width: calc(80% - (var(--superheader-line-height) * 15vh)); 
-        right: calc((100% - (var(--superheader-line-height) * 15vh)) / 2); 
+        width: 50%;
+        right: 50%;
+        transform: translate(60%, -50%);
     }
 
-    #scroll-bar-container {
-        width: calc(100% - (var(--superheader-line-height) * 15vh));
-        right: 0;
+    #scroll-indicator {
+        width: 50%;
+        right: 50%;
+        transform: translate(60%);
     }
 
     :root {
@@ -108,41 +102,7 @@
 
 }
 
-@media only screen and (max-width: 480px) {
-    #hero-superheader {
-        width: 0;
-        height: 150vh;
-        bottom: 0%;
-        width: 1em;
-        font-size: 15vh;
-        position: absolute;
-        opacity: 50%;
-    }
-
-    #hero-subheader {
-        width: 100%;
-        right: 50%;
-    }
-
-    #scroll-bar-container {
-        width: 100%;
-        right: 0;
-    }
-
-}
-
-#scroll-bar-container .scroll-indicator {
-    font-size: 1rem;
-    width: 50%;
-    text-align: center;
-    bottom: 58px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    color: var(--grey);
-}
-
-#scroll-bar-container .scroll-bar {
+#scroll-indicator .scroll-bar {
     position: absolute;
     left: 50%;
     width: 2px;
@@ -158,7 +118,7 @@
 }
 
 
-#scroll-bar-container .scroll-light {
+#scroll-indicator .scroll-light {
     position: absolute;
     left: 50%;
     width: 2px;
@@ -176,5 +136,18 @@
 }
 
 #portfolio-container {
+    margin: 15vh 10%;
+}
+#portfolio-header {
+    position: relative;
+}
 
+#portfolio-header span {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    
+    background-color: var(--white);
 }
