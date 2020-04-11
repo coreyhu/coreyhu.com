@@ -13,7 +13,6 @@
     width: 36px;
     background: var(--light-grey);
     display: block;
-    content: '';
     position: absolute;
     transition: all ease-out 0.2s;
     transition-property: width, background-color, transform;

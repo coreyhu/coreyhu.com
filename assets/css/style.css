@@ -51,12 +51,15 @@ h1 {
     font-size: 4rem;
     font-weight: 300;
     font-style: normal;
+    margin-bottom: 1vh;
 }
 
 h2 {
     font-size: 3.375rem;
     font-weight: 700;
     font-style: normal;
+    margin-bottom: 0vh;
+    line-height: .8em;
 }
 
 h3 {
@@ -64,6 +67,7 @@ h3 {
     font-weight: 500;
     font-style: normal;
     color: var(--light-grey);
+    margin-bottom: 2vh;
 }
 
 h4 {
@@ -71,6 +75,7 @@ h4 {
     font-weight: 300;
     font-style: italic;
     color: var(--light-grey);
+    margin-bottom: 1.5vh;
 }
 
 
@@ -78,12 +83,14 @@ h5 {
     font-size: 1.5rem;
     font-weight: 300;
     font-style: normal;
+    margin-bottom: 1.5vh;
 }
 
 h6 {
     font-size: 1.3125rem;
     font-weight: 500;
     font-style: normal;
+    margin-bottom: 1.5vh;
 }
 
 a {
@@ -160,15 +167,15 @@ nav .button {
 }
 
 .drop-shadow {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button-secondary.drop-shadow {
-    box-shadow: inset 0 0 0 0 var(--white), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 0 0 var(--white), 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button-secondary.drop-shadow:hover {
-    box-shadow: inset 400px 0 0 0 var(--white), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 400px 0 0 0 var(--white), 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .menu-button {

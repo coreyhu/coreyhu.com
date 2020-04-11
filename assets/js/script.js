@@ -1,8 +1,12 @@
 function menuToggle(button, menu) {
     button.classList.toggle("button-active");
+
+    button.childNodes[1].classList.toggle("drop-shadow");
+    button.childNodes[3].classList.toggle("drop-shadow");
+    button.childNodes[5].classList.toggle("drop-shadow");
+
     menu.classList.toggle("menu-active");
 }
-
 
 // function copyAddress() {
 //     var copyText = document.getElementById("myInput");

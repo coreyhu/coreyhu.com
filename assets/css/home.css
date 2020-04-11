@@ -43,8 +43,6 @@
 }
 
 
-
-
 #hero-subheader {
     width: calc(80% - (var(--superheader-line-height) * 2 * var(--superheader-font-size))); 
     float: right;
@@ -62,7 +60,6 @@
 
 #hero-subheader h3 {
     color: var(--white);
-    margin-bottom: 3vh;
 }
 
 #scroll-indicator {
@@ -111,7 +108,7 @@
     background-color: var(--grey);
 }
 
-@keyframes scroll-light-slide {
+@keyframes scroll-light-slide-down {
     0%   {bottom: calc(var(--scroll-indicator-line-height) - var(--scroll-indicator-light-height)); height: var(--scroll-indicator-light-height);}
     90% {bottom: 0; height: var(--scroll-indicator-light-height);}
     100% {bottom: 0; height: 0px;}
@@ -123,7 +120,7 @@
     left: 50%;
     width: 2px;
     height: var(--scroll-indicator-light-height);
-    animation: scroll-light-slide 3s linear 0s infinite normal none;
+    animation: scroll-light-slide-down 3s linear 0s infinite normal none;
     background-color: var(--white);
 }
 
@@ -137,17 +134,72 @@
 
 #portfolio-container {
     margin: 15vh 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 #portfolio-header {
+    margin: 15vh 5%;
     position: relative;
+    margin-bottom: 10vh;
 }
 
 #portfolio-header span {
     position: absolute;
-    width: 50%;
+    width: 20%;
     height: 2px;
     top: 50%;
-    right: 0;
+    transform: translateY(-50%);
+    left: 14em;
     
     background-color: var(--white);
+}
+
+
+.portfolio-slide {
+    width: 100%;
+}
+
+.portfolio-slide .portfolio-slide-main-content {
+    width: 60%;
+    float: left;
+}
+
+.portfolio-slide .portfolio-slide-aside {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.portfolio-slide .portfolio-slide-img-container {
+    margin: 0 auto;
+    width: 80vw;
+    object-fit: cover;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.portfolio-slide h2, .portfolio-slide img {
+    transition: all ease .8s;
+    cursor: pointer;
+}
+
+.portfolio-slide img {
+    display: block;
+    width: 100%;
+    
+    transform-origin: 50% 50%;
+    transition-property: opacity, transform;
+}
+
+.portfolio-slide:hover img {
+    transform: scale(1.1);
+    opacity: 80%;
+}
+
+
+#nvidia-slide:hover h2 {
+    color: #76b900;
 }
