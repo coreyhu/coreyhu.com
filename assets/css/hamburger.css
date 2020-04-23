@@ -15,7 +15,7 @@
     display: block;
     position: absolute;
     transition: all ease-out 0.2s;
-    transition-property: width, background-color, transform;
+    transition-property: width, background-color, transform, box-shadow;
     cursor: pointer;
 }
 
@@ -47,23 +47,23 @@
     cursor: pointer;
 }
 
-.button-active span.bar1 {
+.hamburger-button-active span.bar1 {
     transform: rotate(-48deg) translate(-9px, 8px);
 }
   
-.button-active span.bar2 {
+.hamburger-button-active span.bar2 {
     width: 0px !important;
 }
 
-.button-active span.bar3 {
+.hamburger-button-active span.bar3 {
     transform: rotate(48deg) translate(-9px, -8px);
 }
 
-#hamburger-icon.button-active:hover > span.bar1, #hamburger-icon.button-active:hover > span.bar3 {
+#hamburger-icon.hamburger-button-active:hover > span.bar1, #hamburger-icon.hamburger-button-active:hover > span.bar3 {
     width: 36px !important;
 }
 
-#hamburger-icon.button-active:hover > span.bar2 {
+#hamburger-icon.hamburger-button-active:hover > span.bar2 {
     width: 0 !important;
 }
 
@@ -80,7 +80,40 @@
     pointer-events: none;
 }
 
+#hamburger-menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
 #hamburger-menu.menu-active {
-    opacity: 90%;
+    opacity: 98%;
     pointer-events: all;
+}
+
+.hamburger-column {
+    margin: 10vh 5% 10vh 5%;
+    position: relative;
+    display: inline-block;
+
+}
+
+.hamburger-column-header h4 {
+    /* color: var(--light-grey); */
+    margin-bottom: 5vh;
+}
+
+.hamburger-link {
+    color: var(--light-grey);
+}
+
+.hamburger-link:hover:after {
+    width: 20%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12em;
+    
+    background-color: var(--white);
 }

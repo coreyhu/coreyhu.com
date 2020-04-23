@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="assets/css/hamburger.css">
         <link rel="stylesheet" href="assets/css/home.css">
 
+        <script src="assets/js/script.js" async></script>
+
         <title>Corey</title>
     </head>
     <body>
@@ -21,7 +23,32 @@
                 </a>
 
                 <div id="hamburger-menu">
-                    
+                    <div id="hamburger-menu-container">
+                        <div class="hamburger-column">
+                            
+                            <div class="hamburger-column-header"> 
+                                <h4>My life</h4> <span> </span>
+                            </div>
+                            
+                            <h3><a class="hamburger-link">About</a></h3>
+                                <h3><a class="hamburger-link">Blog</a></h3>
+                                <h3><a class="hamburger-link">Contact</a></h3>
+
+                        </div>
+                        
+                        <div class="hamburger-column">
+
+                            <div class="hamburger-column-header"> 
+                                <h4>My work</h4> <span> </span>
+                            </div>
+                            
+                            <h3><a class="hamburger-link">Urbanist</a></h3>
+                                <h3><a class="hamburger-link">Cal Hacks</a></h3>
+                                <h3><a class="hamburger-link">Daily Cal</a></h3>
+                            <h3><a class="hamburger-link">BAIR</a></h3>
+
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -30,7 +57,7 @@
             <div id="hero-superheader" class="superheader horizontal-text"><span>Creative</span> <span>Explorer</span> </div>
 
             <div id="hero-subheader">
-                <h6>Hi, I'm Corey</h6>
+                <h4>Hi, I'm Corey</h4>
                 <h3>Designer and Deep Learning Engineer. SF Bay Area.</h3>
                 
                 <a class="button button-secondary drop-shadow" href="contact.html">+ about me </a>
@@ -46,40 +73,103 @@
 
         <section id="portfolio">
             <div id="portfolio-header"> 
-                <h5>A byte of my work</h5> <span> </span>
+                <h6>A byte of my work</h6> <span> </span>
             </div>
             
-                
-
             <div id="portfolio-container">
 
                 <article id="nvidia-slide"class="portfolio-slide"> 
-                    <div class="portfolio-slide-main-content">
-                        <a><h2>NVIDIA</h2></a>
-                        <h4>AI Algorithms for Automating Scalable Circuit Design</h4>
-                        <h6>Deep Learning Engineer</h6>
+                    <div class="portfolio-slide-container">
+                        <div class="portfolio-slide-main-content">
+                            <a><h2 class="portfolio-slide-title">NVIDIA</h2></a>
+                            <h4 class="portfolio-slide-caption">AI Algorithms for Automating Scalable Circuit Design</h4>
+                            <h6 class="portfolio-slide-position">Deep Learning Engineer // 2020 - Present</h6>
+                        </div>
+
+                        <div class="portfolio-slide-aside">
+                            <h5 class="portfolio-slide-bio">
+                                Coming June 2020: Working in the NVIDIA AI DIVN
+                            </h5>
+                        </div>
                     </div>
 
-                    <div class="portfolio-slide-aside">
-                        <h6>2020-Present</h6>
-                        <h4>
-                            Coming June 2020: Working in the NVIDIA AI DIVN
-                        </h4>
+                    <a class="portfolio-slide-img-container">
+                        <img src="assets/img/nvidia.png">
+                    </a>
+                </article>
+
+                <article id="machine-kerning-slide"class="portfolio-slide">
+                    <div class="portfolio-slide-container">
+                        <div class="portfolio-slide-main-content">
+                            <a><h2 class="portfolio-slide-title">Machine Kerning</h2></a>
+                            <h4 class="portfolio-slide-caption">Open Source Creative Font Foundry</h4>
+                            <h6 class="portfolio-slide-position">Co-Founder // 2020 - Present</h6>
+                        </div>
+
+                        <div class="portfolio-slide-aside">
+                            <h5 class="portfolio-slide-bio">
+                                Coming June 2020: Working in the NVIDIA AI DIVN
+                            </h5>
+                        </div>
                     </div>
 
-                        <a class="portfolio-slide-img-container">
-                            <img src="assets/img/quadro.png">
-                        </a>
-                    </article>
+                    <a class="portfolio-slide-img-container">
+                        <img src="assets/img/machine_kerning.png">
+                    </a>
+                </article>
 
+                <article id="cal-hacks-slide"class="portfolio-slide">
+                    <div class="portfolio-slide-container">
+                        <div class="portfolio-slide-main-content">
+                            <a><h2 class="portfolio-slide-title">Cal Hacks</h2></a>
+                            <h4 class="portfolio-slide-caption">The World's Largest Collegiate Hackathon</h4>
+                            <h6 class="portfolio-slide-position">Director // 2019 - 2020</h6>
+                        </div>
+
+                        <div class="portfolio-slide-aside">
+                            <h5 class="portfolio-slide-bio">
+                                Cal Hacks subtext/contributon
+                            </h5>
+                        </div>
+                    </div>
+
+                    <a class="portfolio-slide-img-container">
+                        <img src="assets/img/cal_hacks.png">
+                    </a>
+                </article>
+    
+                <article id="daily-cal-slide"class="portfolio-slide">
+                    <div class="portfolio-slide-container">
+                        <div class="portfolio-slide-main-content">
+                            <a><h2 class="portfolio-slide-title">The Daily Californian</h2></a>
+                            <h4 class="portfolio-slide-caption">UC Berkeley's Independent Student Newspaper</h4>
+                            <h6 class="portfolio-slide-position">Production Director, Business Manager // 2016 - 2020</h6>
+                        </div>
+
+                        <div class="portfolio-slide-aside">
+                            <h5 class="portfolio-slide-bio">
+                                Daily Cal contributions
+                            </h5>
+                        </div>
+                    </div>
+
+                    <a class="portfolio-slide-img-container">
+                        <img src="assets/img/daily_cal.png">
+                    </a>
+                </article>
             </div>
-
-
-
         </section>
 
-        <script src="assets/js/script.js" ></script>
-        
+        <footer>
+            <div id="footer-content">
+                <h1 class="contact-button">
+                    <a>Let's get in touch!</a>
+                </h1>
+                <br/>
+                <h1>You can also find me on <a href="https://linkedin.com/in/coreyhu">LinkedIn</a>, <a href="https://github.com/coreywho">Github</a>, & <a href="https://behance.net/coreywho">Behance</a>
+                </h1>
+            </div>
+        </footer>
 
     </body>
 </html>

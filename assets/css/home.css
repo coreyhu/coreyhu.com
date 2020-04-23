@@ -8,6 +8,7 @@
 
 #hero {
     background-color: var(--dark-grey);
+    height: 100vh;
 }
 
 #hero-superheader {
@@ -54,8 +55,9 @@
 
 }
 
-#hero-subheader h6 {
+#hero-subheader h4 {
     color: var(--grey);
+    margin-bottom: 0;
 }
 
 #hero-subheader h3 {
@@ -66,12 +68,11 @@
     position: absolute;
     width: 36px; 
     height: 15vh;
-    bottom: 0%;
-    right: 2%;
-    
+    bottom: 0vh;
+    right: 2%;   
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     #hero-superheader {
         height: 150vh;
@@ -97,6 +98,19 @@
         --scroll-indicator-light-height: 2vh;
     }
 
+    .portfolio-slide-aside {
+        display: none;
+    }
+    
+
+}
+
+@media only screen and (max-width: 480px) {
+    #scroll-indicator {
+        display: none;
+    }
+
+
 }
 
 #scroll-indicator .scroll-bar {
@@ -120,7 +134,7 @@
     left: 50%;
     width: 2px;
     height: var(--scroll-indicator-light-height);
-    animation: scroll-light-slide-down 3s linear 0s infinite normal none;
+    animation: scroll-light-slide-down 1.8s ease-in 0.01s infinite normal none;
     background-color: var(--white);
 }
 
@@ -129,20 +143,12 @@
 /* PORTFOLIO */
 
 #portfolio {
-    background-color: var(--offblack); 
+    background-color: var(--offblack);     
 }
 
-#portfolio-container {
-    margin: 15vh 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 #portfolio-header {
-    margin: 15vh 5%;
+    margin: 10vh 5%;
     position: relative;
-    margin-bottom: 10vh;
 }
 
 #portfolio-header span {
@@ -151,19 +157,36 @@
     height: 2px;
     top: 50%;
     transform: translateY(-50%);
-    left: 14em;
+    left: 10em;
     
     background-color: var(--white);
 }
 
+#portfolio-container {
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 
 .portfolio-slide {
     width: 100%;
+    margin-bottom: 20vh;
 }
 
 .portfolio-slide .portfolio-slide-main-content {
-    width: 60%;
+    width: 100%;
     float: left;
+}
+
+.portfolio-slide-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .portfolio-slide .portfolio-slide-aside {
@@ -199,7 +222,32 @@
     opacity: 80%;
 }
 
+.portfolio-slide-caption {
+    color: var(--grey);
+}
+
+.portfolio-slide-position {
+    color: var(--light-grey);
+}
+
+.portfolio-slide-bio {
+    color: var(--light-grey);
+}
+
 
 #nvidia-slide:hover h2 {
     color: #76b900;
 }
+
+#cal-hacks-slide:hover h2 {
+    color: #73C9E4;
+}
+
+#daily-cal-slide:hover h2 {
+    color: #4C9AD0;
+}
+
+#machine-kerning-slide:hover h2 {
+    color: #888888;
+}
+
