@@ -2,42 +2,65 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/hamburger.css">
         <link rel="stylesheet" href="assets/css/home.css">
 
+        <link rel="stylesheet" href="assets/css/gradients.css">
+
+
         <script src="assets/js/script.js" async></script>
 
         <title>Corey</title>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
     </head>
     <body>
 
         <header>
             <nav class="fixed">
-                <a class="nav-logo button nav-button drop-shadow" href="index.html">Ch</a>
 
-                <a id="hamburger-icon" class="button menu-button">
-                        <span class="bar1 drop-shadow"></span>
-                        <span class="bar2 drop-shadow"></span>
-                        <span class="bar3 drop-shadow"></span>
+                <a id="hamburger-icon" class="button menu-button animated fadeIn delay-1s">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
                 </a>
 
                 <div id="hamburger-menu">
+                    <a class="logo-button nav-button" href="index.html"><img id="logo" class="drop-shadow" src="/assets/img/logo.png"></a>
+
                     <div id="hamburger-menu-container">
                         <div class="hamburger-column">
-                            
                             <div class="hamburger-column-header"> 
-                                <h4>My life</h4> <span> </span>
+                                <h4>My life in shambles</h4> <span> </span>
                             </div>
                             
-                            <h3><a class="hamburger-link">About</a></h3>
-                                <h3><a class="hamburger-link">Blog</a></h3>
-                                <h3><a class="hamburger-link">Contact</a></h3>
-
+                            <h3><a class="hamburger-link" href="about.html">About</a></h3>
+                            <h3><a class="hamburger-link" href="blog.html">Blog</a></h3>
+                            <h3><a class="hamburger-link" href="corey hu resume.pdf">Resume</a></h3>
+                            
                         </div>
                         
                         <div class="hamburger-column">
-
                             <div class="hamburger-column-header"> 
                                 <h4>My work</h4> <span> </span>
                             </div>
@@ -45,8 +68,7 @@
                             <h3><a class="hamburger-link">Urbanist</a></h3>
                                 <h3><a class="hamburger-link">Cal Hacks</a></h3>
                                 <h3><a class="hamburger-link">Daily Cal</a></h3>
-                            <h3><a class="hamburger-link">BAIR</a></h3>
-
+                                <h3><a class="hamburger-link">BAIR</a></h3>
                         </div>
                     </div>
                 </div>
@@ -54,21 +76,25 @@
         </header>
 
         <section id="hero">
-            <div id="hero-superheader" class="superheader horizontal-text"><span>Creative</span> <span>Explorer</span> </div>
+            <div id="hero-superheader" class="superheader horizontal-text"><div class="animated 1 fadeIn delay-1s">
+                <span class="warm-hover-gradient no-text-select">Creative</span>
+                <span class="cool-hover-gradient no-text-select">Explorer</span>
+            </div> </div>
 
             <div id="hero-subheader">
-                <h4>Hi, I'm Corey</h4>
-                <h3>Designer and Deep Learning Engineer. SF Bay Area.</h3>
-                
-                <a class="button button-secondary drop-shadow" href="contact.html">+ about me </a>
-                <a class="button button-secondary drop-shadow" href="portfolio.html">+ get in touch </a>
+                <div class="animated 1 fadeInUp">
+                    <h4>Hi, I'm Corey</h4>
+                    <h3>Designer and Deep Learning Engineer. SF Bay Area.</h3>
+                    
+                    <a href="about.html" class="button button-dark button-secondary drop-shadow">+ about me </a>
+                    <a id="hero-email-copy-link" class="button button-dark button-secondary drop-shadow"> + get in touch </a>
+                </div>
             </div>
             
-            <div id="scroll-indicator">
+            <div id="scroll-indicator" class="animated fadeInUp">
                 <span class="scroll-bar"></span>
                 <span class="scroll-light"></span>
             </div>
-
         </section>
 
         <section id="portfolio">
@@ -78,17 +104,17 @@
             
             <div id="portfolio-container">
 
-                <article id="nvidia-slide"class="portfolio-slide"> 
+                <article id="nvidia-slide" class="portfolio-slide" data-aos="fade-up"> 
                     <div class="portfolio-slide-container">
                         <div class="portfolio-slide-main-content">
                             <a><h2 class="portfolio-slide-title">NVIDIA</h2></a>
-                            <h4 class="portfolio-slide-caption">AI Algorithms for Automating Scalable Circuit Design</h4>
+                            <h4 class="portfolio-slide-caption">AI for Automating Scalable Circuit Design</h4>
                             <h6 class="portfolio-slide-position">Deep Learning Engineer // 2020 - Present</h6>
                         </div>
 
                         <div class="portfolio-slide-aside">
                             <h5 class="portfolio-slide-bio">
-                                Coming June 2020: Working in the NVIDIA AI DIVN
+                                Starting June 2020
                             </h5>
                         </div>
                     </div>
@@ -98,7 +124,7 @@
                     </a>
                 </article>
 
-                <article id="machine-kerning-slide"class="portfolio-slide">
+                <article id="machine-kerning-slide"class="portfolio-slide" data-aos="fade-up">
                     <div class="portfolio-slide-container">
                         <div class="portfolio-slide-main-content">
                             <a><h2 class="portfolio-slide-title">Machine Kerning</h2></a>
@@ -108,7 +134,7 @@
 
                         <div class="portfolio-slide-aside">
                             <h5 class="portfolio-slide-bio">
-                                Coming June 2020: Working in the NVIDIA AI DIVN
+                                Launched Urbanist, the foundry's first open-source font. 
                             </h5>
                         </div>
                     </div>
@@ -118,7 +144,7 @@
                     </a>
                 </article>
 
-                <article id="cal-hacks-slide"class="portfolio-slide">
+                <article id="cal-hacks-slide"class="portfolio-slide" data-aos="fade-up">
                     <div class="portfolio-slide-container">
                         <div class="portfolio-slide-main-content">
                             <a><h2 class="portfolio-slide-title">Cal Hacks</h2></a>
@@ -128,7 +154,7 @@
 
                         <div class="portfolio-slide-aside">
                             <h5 class="portfolio-slide-bio">
-                                Cal Hacks subtext/contributon
+                                Event Director organizing design and sponsorship initiatives for Cal Hacks 6.0. 
                             </h5>
                         </div>
                     </div>
@@ -138,7 +164,7 @@
                     </a>
                 </article>
     
-                <article id="daily-cal-slide"class="portfolio-slide">
+                <article id="daily-cal-slide"class="portfolio-slide" data-aos="fade-up">
                     <div class="portfolio-slide-container">
                         <div class="portfolio-slide-main-content">
                             <a><h2 class="portfolio-slide-title">The Daily Californian</h2></a>
@@ -148,7 +174,7 @@
 
                         <div class="portfolio-slide-aside">
                             <h5 class="portfolio-slide-bio">
-                                Daily Cal contributions
+                                Led 75+ people in 6 business departments. Spearheaded rebranding and website redesign.
                             </h5>
                         </div>
                     </div>
@@ -157,19 +183,35 @@
                         <img src="assets/img/daily_cal.png">
                     </a>
                 </article>
+                
+                <article data-aos="fade-up">
+                    <h4 id="resume-button-header">Learn more</h4>
+                    <a href="corey hu resume.pdf" class="button button-secondary">+ check out my resume </a>
+                </article>
             </div>
         </section>
 
         <footer>
-            <div id="footer-content">
-                <h1 class="contact-button">
-                    <a>Let's get in touch!</a>
+            <div id="footer-content" data-aos="fade-up">
+                <h1>
+                    <a id="footer-email-copy-link">Let's get in touch!</a>
                 </h1>
                 <br/>
-                <h1>You can also find me on <a href="https://linkedin.com/in/coreyhu">LinkedIn</a>, <a href="https://github.com/coreywho">Github</a>, & <a href="https://behance.net/coreywho">Behance</a>
+                <h1>You can also find me on <a href="https://www.linkedin.com/in/coreyhu">LinkedIn</a>, <a href="https://www.github.com/coreywho">Github</a>, <a href="https://scholar.google.com/citations?user=hG7Ul-0AAAAJ&hl=en">Google Scholar</a>, & <a href="https://www.behance.net/coreywho">Behance</a>
                 </h1>
             </div>
         </footer>
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+              mirror: false,
+              easing: 'ease-out',
+              offset: 40,
+              duration: 800
+          });
+        </script>
 
     </body>
 </html>

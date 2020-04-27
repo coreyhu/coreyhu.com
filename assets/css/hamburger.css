@@ -11,7 +11,7 @@
 #hamburger-icon span {
     height: 2px;
     width: 36px;
-    background: var(--light-grey);
+    background: var(--grey);
     display: block;
     position: absolute;
     transition: all ease-out 0.2s;
@@ -32,7 +32,7 @@
 }
 
 #hamburger-icon:hover > span {
-    background-color: var(--white);
+    background-color: var(--light-grey);
 }
 
 #hamburger-icon:hover > span.bar3{
@@ -74,7 +74,8 @@
     width: 100%;
     height: 100vh;
     background-color: var(--offblack);
-    opacity: 0%;
+    opacity: 0;
+
     transition: opacity ease-out 0.2s;
     z-index: -1;
     pointer-events: none;
@@ -83,25 +84,32 @@
 #hamburger-menu-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: baseline;
 }
 
 #hamburger-menu.menu-active {
-    opacity: 98%;
+    opacity: .98;
     pointer-events: all;
 }
 
 .hamburger-column {
-    margin: 10vh 5% 10vh 5%;
+    margin: 10vh 5% 2vh 5%;
     position: relative;
     display: inline-block;
-
 }
 
 .hamburger-column-header h4 {
-    /* color: var(--light-grey); */
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
+}
+
+.hamburger-column-header span {
+    width: 20px;
+    height: 2px;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: var(--white);
 }
 
 .hamburger-link {
@@ -114,6 +122,5 @@
     top: 50%;
     transform: translateY(-50%);
     left: 12em;
-    
     background-color: var(--white);
 }

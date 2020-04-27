@@ -10,6 +10,14 @@
 
 @font-face {
     font-family: Urbanist;
+    src: url('../fonts/Urbanist-Light.woff2') format('woff2'),
+         url('../fonts/Urbanist-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Urbanist;
     src: url('../fonts/Urbanist-Italic.woff2') format('woff2'),
          url('../fonts/Urbanist-Italic.woff') format('woff');
     font-weight: 300;
@@ -34,11 +42,13 @@
 
 :root {
     --white:#ffffff;
+    --light-light-grey: #f1f1f1;
     --light-grey: #bababa;
     --grey:#898989;
     --dark-grey: #2d2d2d;
     --offblack:#121212;
     --crimson: #c82127;
+    --link-color: #f29e1f;
 }
 
 
@@ -49,12 +59,8 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 0;
 }
 
-h1 {
-    /* color: var(--light-grey); */
-}
-
 h1, h1 a {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     font-style: normal;
     margin-bottom: 1vh;
@@ -101,7 +107,7 @@ h5 {
 }
 
 h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     font-style: normal;
     margin: 2vh 0 4vh 0;
@@ -111,6 +117,29 @@ a {
     /* font-size: 1rem; */
     text-decoration: none;
 }
+
+p {
+    font-size: 1.1rem;
+    font-family: 'Roboto Slab', Urbanist, serif;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+p a {
+    font-family: 'Roboto Slab', Urbanist, serif;
+    text-decoration: none;
+    background: var(--link-color);
+    border-bottom: 2px solid var(--link-color);
+    padding: 0 3px;
+    border-radius: 2px;
+}
+
+p a:hover {
+    color: var(--white) !important;
+    opacity: .8;    
+}
+
 
 body {
     background-color: var(--offblack);
@@ -139,6 +168,16 @@ nav .button {
     margin: 3vh 2vw 0 2vw;
 }
 
+.no-text-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
 .button {
     padding: 1vh 1vw;
     margin: 1vh 1vw;
@@ -147,6 +186,7 @@ nav .button {
     font-weight: 500;
     font-style: normal;
     display: inline-block;
+    cursor: pointer;
 }
 
 .button-primary {
@@ -191,20 +231,59 @@ nav .button {
     box-shadow: inset 400px 0 0 0 var(--white), 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
+.button-dark {
+    color: var(--offblack);
+    border: 4px solid var(--offblack);
+    box-shadow: inset 0 0 0 0 var(--offblack);
+}
+
+.button-dark:hover {
+    color: var(--white);
+    box-shadow: inset 400px 0 0 0 var(--offblack);
+}
+
+.button-secondary.drop-shadow {
+    box-shadow: inset 0 0 0 0 var(--offblack), 0px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button-secondary.drop-shadow:hover {
+    box-shadow: inset 400px 0 0 0 var(--offblack), 0px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button-dark a {
+    color: var(--offblack);
+}
+
+.button-dark:hover a {
+    color: var(--white);
+}
+
 .menu-button {
     float: right;
 }
 
-
-
 .nav-logo {
     background-color: var(--offblack);
-    float: left;
+}
+
+.logo-button {
+    margin-left: 5vh;
+}
+
+#logo {
+    width: 72px;
+    height: auto;
+    transition: opacity ease-out 0.25s;
+}
+
+#logo:hover {
+    opacity: .75;
 }
 
 footer {
-    margin-top: 20vmin;
-    margin-bottom: 40vmin;
+    padding-top: 15vh;
+    padding-bottom: 25vh;
+    background-color: var(--offblack);
 }
 
 #footer-content {
@@ -214,4 +293,26 @@ footer {
 
 footer h1 {
     color: var(--light-grey);
+}
+
+@media only screen and (max-width: 768px) {
+    h1, h1 a {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    h1, h1 a {
+        font-size: 2.5rem;
+    }
+}
+
+.email-copy-link {
+    opacity: 1;
+    transition: opacity 1.25s;
+}
+
+.text-fade-out {
+    opacity: 0 !important;
 }
