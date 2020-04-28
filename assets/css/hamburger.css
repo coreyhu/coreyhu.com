@@ -113,8 +113,11 @@
     background-color: var(--white);
 }
 
+.hamburger-link a {
+    color: var(--grey);
+}
+
 .hamburger-link {
-    color: var(--light-grey);
     margin-bottom: 1vh;
 }
 

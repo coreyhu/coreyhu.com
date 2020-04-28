@@ -48,7 +48,6 @@
     --dark-grey: #686868;
     --offblack:#121212;
     --crimson: #c82127;
-    --link-color: #f29e1f;
 }
 
 
@@ -149,6 +148,16 @@ section {
     width: 100%;
 }
 
+article {
+    margin-bottom: 5vh;
+}
+
+.skewed {
+    transform: skewY(2.4deg);
+    transform-origin: top right;
+    position: absolute;
+    z-index: 0;
+}
 
 /* MENU BUTTON STYLING */
 
@@ -223,14 +232,6 @@ nav .button {
     box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
-.button-secondary.drop-shadow {
-    box-shadow: inset 0 0 0 0 var(--white), 0px 4px 1px rgba(0, 0, 0, 0.5);
-}
-
-.button-secondary.drop-shadow:hover {
-    box-shadow: inset 400px 0 0 0 var(--white), 0px 4px 1px rgba(0, 0, 0, 0.5);
-}
-
 .button-dark {
     color: var(--offblack);
     border: 4px solid var(--offblack);
@@ -272,17 +273,20 @@ nav .button {
 }
 
 #logo {
-    width: 72px;
-    height: auto;
+    width: 128px;
+    position: relative;
+    top: 2vh;
     transition: opacity ease-out 0.25s;
     user-select: none;
 }
 
 #logo:hover {
-    opacity: .75;
+    /* opacity: .75; */
+    filter: invert();
 }
 
 footer {
+    width: 100%;
     padding-top: 15vh;
     padding-bottom: 25vh;
     background-color: var(--offblack);
