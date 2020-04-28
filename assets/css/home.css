@@ -12,32 +12,23 @@
 }
 
 #hero-superheader {
-    width: 2em;
-    display: inline-block;
-    height: 100vh;
-    position: relative;
+    width: 100%;
+    position: absolute;
     z-index: 0;
-    bottom: 2%;
-    opacity: .50;
-    font-family: Urbanist, Arial, Helvetica, sans-serif;
-    color: var(--light-grey);
-    font-size: var(--superheader-font-size);
-    font-weight: 700;
-    font-style: normal;
+    object-fit: cover;
+    overflow: hidden;   
+}
+
+#hero-superheader img {
+    position: relative;
+    height: 110vh;
+    top: -2vh;
+    left: -10%;
 }
 
 #hero-superheader .animated {
     animation-duration: 2.5s;
 }
-
-.horizontal-text {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-align: left;
-    line-height: calc(var(--superheader-line-height) * 1em);
-}
-
-
 
 #hero-superheader span {
     transition: color ease-in-out 0.2s;
@@ -66,7 +57,7 @@
 }
 
 #hero-subheader h4 {
-    color: var(--grey);
+    color: var(--dark-grey);
     margin-bottom: 0;
 }
 
@@ -83,18 +74,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-    #hero-superheader {
-        height: 150vh;
-        bottom: 52%;
-        width: 1em;
-        font-size: 12.5vh;
-    }
-
     #hero-subheader {
-        width: 50%;
-        right: 50%;
-        transform: translate(60%, -50%);
+        width: 80%;
+        float: none;
     }
 
     #scroll-indicator {
@@ -181,7 +163,11 @@
 
 .portfolio-slide {
     width: 100%;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
+}
+
+#resume-slide {
+    margin-bottom: 10vh;
 }
 
 .portfolio-slide .portfolio-slide-main-content {

@@ -20,6 +20,6 @@ body {
 #about-section h1, #about-section h2, 
 #about-section h3, #about-section h4, 
 #about-section h5, #about-section h6, 
-#about-section p, #about-section a {
+#about-section p {
     color: var(--offblack);
 }  
