@@ -114,7 +114,6 @@ h6 {
 }
 
 a {
-    /* font-size: 1rem; */
     text-decoration: none;
 }
 
@@ -129,15 +128,14 @@ p {
 p a {
     font-family: 'Roboto Slab', Urbanist, serif;
     text-decoration: none;
-    background: var(--link-color);
-    border-bottom: 2px solid var(--link-color);
+    background: var(--dark-grey);
+    color: var(--white) !important;
     padding: 0 3px;
     border-radius: 2px;
 }
 
 p a:hover {
-    color: var(--white) !important;
-    opacity: .8;    
+    opacity: .7;    
 }
 
 
@@ -192,6 +190,7 @@ nav .button {
 .button-primary {
     background-color: var(--white);
     border: 4px solid var(--white);
+    border-radius: 4px;
     box-sizing: border-box;
 
     transition: padding, margin ease-out 0.25s;
@@ -200,6 +199,7 @@ nav .button {
 
 .button-secondary {
     border: 4px solid var(--white);
+    border-radius: 4px;
     box-sizing: border-box;
     
     box-shadow: inset 0 0 0 0 var(--white);
@@ -234,6 +234,7 @@ nav .button {
 .button-dark {
     color: var(--offblack);
     border: 4px solid var(--offblack);
+    border-radius: 4px;
     box-shadow: inset 0 0 0 0 var(--offblack);
 }
 
@@ -274,6 +275,7 @@ nav .button {
     width: 72px;
     height: auto;
     transition: opacity ease-out 0.25s;
+    user-select: none;
 }
 
 #logo:hover {

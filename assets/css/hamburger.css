@@ -17,6 +17,7 @@
     transition: all ease-out 0.2s;
     transition-property: width, background-color, transform, box-shadow;
     cursor: pointer;
+    border-radius: 2px;
 }
 
 #hamburger-icon span.bar1 {
@@ -114,6 +115,7 @@
 
 .hamburger-link {
     color: var(--light-grey);
+    margin-bottom: 1vh;
 }
 
 .hamburger-link:hover:after {
