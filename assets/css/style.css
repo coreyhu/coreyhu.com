@@ -276,12 +276,10 @@ nav .button {
     width: 128px;
     position: relative;
     top: 2vh;
-    transition: opacity ease-out 0.25s;
     user-select: none;
 }
 
 #logo:hover {
-    /* opacity: .75; */
     filter: invert();
 }
 
