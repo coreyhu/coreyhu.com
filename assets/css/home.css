@@ -217,6 +217,9 @@
 
 .portfolio-slide h2, .portfolio-slide img {
     transition: all ease .8s;
+}
+
+.portfolio-slide h2:hover, .portfolio-slide img:hover {
     cursor: pointer;
 }
 

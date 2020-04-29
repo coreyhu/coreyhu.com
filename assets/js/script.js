@@ -39,6 +39,7 @@ footerLink.addEventListener('click', function() { copyEmail(footerLink, "contact
 
 
 var heroLink = document.getElementById("hero-email-copy-link");
-heroLink.addEventListener('click', function() { copyEmail(heroLink, "contact", "coreyhu.com"); });
-
+if(heroLink != null) {
+    heroLink.addEventListener('click', function() { copyEmail(heroLink, "contact", "coreyhu.com"); });
+}
 

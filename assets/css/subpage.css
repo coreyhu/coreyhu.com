@@ -40,12 +40,14 @@
 }
 
 .section-content {
+    width: 95%;
+    margin: auto;
     overflow-x:hidden;
 }
 
 .row {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -70,15 +72,25 @@
 
 
 /* FONT PAGES */
+
+.font-section .section-content {
+    padding: 15vh 0;
+}
+
+.font-section .title.mid {
+    text-align: center;
+}
+
+
 .left, .right {
     transition: transform ease-out .25s;
 }
 
 .left {
-    transform: translateX(-40vw);}
+    transform: translateX(-50vw);}
 
 .right {
-    transform: translateX(40vw);
+    transform: translateX(50vw);
 }
 
 .font-section:hover .left {
@@ -116,6 +128,53 @@
 .buttons-container a {
     display: inline-block;
 }
+
+@media only screen and (max-width: 768px) {
+    .left, .right {
+        width: 40%;
+        min-width: 280px;
+        order: 2;
+    }
+    .mid {
+        flex: 0 0 100%;
+        order: 0;
+        margin-bottom: 5vh;
+    }
+
+    .font-section .section-content {
+        padding: 10vh 0;
+    }
+
+    .left {
+        transform: translateX(-100vw);}
+    
+    .right {
+        transform: translateX(100vw);
+    }
+}
+
+@media (hover: none) {
+    .left {
+        transform: none !important;
+    }
+    
+    .right {
+        transform: none !important;
+    }
+    
+    .font-section:hover .left {
+        transform: none;
+    } 
+    
+    .font-section:hover .right {
+        transform: none;
+    } 
+
+    .section-white.hoverable {
+        background: var(--light-light-grey);
+    }
+}
+
 
 /* TITLE INITIALIZATIONS */
 .variable-urbanist {

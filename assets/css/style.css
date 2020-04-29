@@ -325,6 +325,12 @@ footer h1 {
     opacity: 0 !important;
 }
 
+/* INPUT DESIGN */
+
+input.slider:focus {
+    outline: none;
+}
+
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -336,6 +342,13 @@ footer h1 {
 
 .slider:hover {
     opacity: 1;
+    cursor: pointer;
+}
+
+@media (hover: none) {
+    .slider:hover {
+        opacity: .7;
+    }
 }
 
 .slider::-webkit-slider-thumb {
