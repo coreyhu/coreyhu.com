@@ -27,8 +27,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/hamburger.css">
-        <link rel="stylesheet" href="assets/css/machine_kerning.css">
+        <link rel="stylesheet" href="assets/css/subpage.css">
         <script src="assets/js/script.js" async></script>
+        <script src="assets/js/variableFonts.js" async></script>
 
         <title>Machine Kerning</title>
 
@@ -60,7 +61,7 @@
         <header>
             <nav class="fixed">
 
-                <a id="hamburger-icon" class="button menu-button animated fadeIn delay-1s">
+                <a id="hamburger-icon" class="button menu-button animated fadeIn">
                         <span class="bar1"></span>
                         <span class="bar2"></span>
                         <span class="bar3"></span>
@@ -96,8 +97,46 @@
             </nav>
         </header>
 
-        <section id="machine-kerning-section" class="drop-shadow animated fadeIn">
+        <section id="hero-section" class="section-centered height-50 section-white">
+            <div class="section-content">
+                <img id="hero-logo" src="assets/img/machine_kerning.svg">
+                <h1 class="title">Machine Kerning</h1>
+                <h5 class="subtitle">Open Source Variable Font Studio</h5>
+            </div>
+        </section>
+    
+        <section id="urbanist-section" class="font-section section-centered height-30 section-white hoverable">
+            <div class="section-content row">
+                
+                <div class="variable-siders-container left">
+                
+                    <div class="slider-container">
+                        <label for="weight-slider">Weight</label>
+                        <input type="range" min="30" max="150" value="77" class="slider" id="wght">
+                    </div>
+    
+                    <div class="slider-container">
+                        <label for="italic-slider">Italics</label>
+                        <input type="range" min="0" max="100" value="0" class="slider" id="ital">
+                    </div>
+                </div>
 
+                <h1 id="urbanist-title-text" class="variable-urbanist title wide-spacing mid">URBANIST</h1>
+
+                <div class="buttons-container right">
+                    <a id="urbanist-download-link" href="https://github.com/coreywho/Urbanist/releases" class="button button-dark button-secondary drop-shadow">+ download </a>
+                    <a id="urbanist-repo-link" href="https://github.com/coreywho/Urbanist">+ more</a>
+                </div>
+
+            </div>
+
+        </section>
+        
+
+        <section id="urbanist-section" class="font-section section-centered height-30 section-white hoverable">
+            <div class="section-content">
+                <h5 class="title">+ more to come</h5>
+           </div>
         </section>
 
 

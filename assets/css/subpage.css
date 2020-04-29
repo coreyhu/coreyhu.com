@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Urbanist Variable';
+    src: url('../fonts/UrbanistGX.ttf') format('truetype');
+    font-weight: 1 999;
+}
+
+/* HIGH LEVEL SECTIONS */
+.section-white {
+    background: var(--white);
+    transition: background-color ease-in-out 0.4s;
+}
+
+.section-white.hoverable:hover {
+    background: var(--light-light-grey);
+}
+
+.section-white h1, .section-white h2, 
+.section-white h3, .section-white h4, 
+.section-white h5, .section-white h6,
+.section-white p, .section-white a,
+.section-white label {
+    color: var(--offblack);
+}
+
+
+#hero-logo {
+    height: 15vh;
+}
+
+.section-centered {
+    position: relative;
+}
+
+.section-centered .section-content {
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+}
+
+.section-content {
+    overflow-x:hidden;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.height-50 {
+    height: 50vh;
+}
+
+.height-30 {
+    height: 30vh;
+}
+
+.subtitle {
+    color: var(--grey) !important;
+    margin-top: -1.2vh;
+}
+
+
+.wide-spacing {
+    letter-spacing: 6px;
+}
+
+
+/* FONT PAGES */
+.left, .right {
+    transition: transform ease-out .25s;
+}
+
+.left {
+    transform: translateX(-40vw);}
+
+.right {
+    transform: translateX(40vw);
+}
+
+.font-section:hover .left {
+    transform: translateX(0);
+} 
+
+.font-section:hover .right {
+    transform: translateX(0);
+} 
+
+.variable-siders-container {
+    width: 20%;
+}
+
+.slider-container {
+    margin-bottom: 4vh;
+    float: right;
+    width: 100%;
+}
+
+.slider-container:last-child {
+    margin-bottom: 2vh;
+} 
+
+.slider-container label {
+    width: 5rem;
+    margin-bottom: 0;
+}
+
+.buttons-container {
+    width: 20%;
+    text-align: center;
+}
+
+.buttons-container a {
+    display: inline-block;
+}
+
+/* TITLE INITIALIZATIONS */
+.variable-urbanist {
+    font-family: 'Urbanist Variable';
+}
+
+#urbanist-title-text {
+    width: 30%;
+    font-variation-settings: 'wght' 30, 'ital' 0;
+}
+
