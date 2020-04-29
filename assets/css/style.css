@@ -52,7 +52,7 @@
 
 
 
-h1, h2, h3, h4, h5, h6, p, a, label {
+h1, h2, h3, h4, h5, h6, p, a, label, .tag {
     font-family: Urbanist, Arial, Helvetica, sans-serif;
     color: var(--white);
     margin: 0;
@@ -73,6 +73,19 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     text-decoration: underline;
     color: var(--white);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    h1, h1 a {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    h1, h1 a {
+        font-size: 2.5rem;
+    }
 }
 
 h2 {
@@ -115,6 +128,14 @@ h6, label {
 a {
     cursor: pointer;
     /* padding: 1vh 0; */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.no-text-decoration {
     text-decoration: none;
 }
 
@@ -290,7 +311,7 @@ nav .button {
 footer {
     width: 100%;
     padding-top: 15vh;
-    padding-bottom: 25vh;
+    padding-bottom: 5vh;
     background-color: var(--offblack);
 }
 
@@ -303,17 +324,9 @@ footer h1 {
     color: var(--grey);
 }
 
-@media only screen and (max-width: 768px) {
-    h1, h1 a {
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-
-    h1, h1 a {
-        font-size: 2.5rem;
-    }
+footer .credits {
+    margin-top: 15vh;
+    color: var(--grey);
 }
 
 .email-copy-link {
@@ -323,6 +336,17 @@ footer h1 {
 
 .text-fade-out {
     opacity: 0 !important;
+}
+
+/* TAG */
+.tagline .tag {
+    display: inline-block;
+    font-size: .8em;
+    color: var(--crimson);
+    border: 2px solid var(--crimson);
+    border-radius: 5px;
+    margin: .5vh 2% .5vh 0;
+    padding: 5px;
 }
 
 /* INPUT DESIGN */

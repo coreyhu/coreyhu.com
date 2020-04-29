@@ -101,6 +101,15 @@
     transform: translateX(0);
 } 
 
+.font-title {
+    text-align: center;
+}
+
+.font-title.title {
+    width: 100%;
+    text-align: center;
+}
+
 .variable-siders-container {
     width: 20%;
 }
@@ -151,6 +160,10 @@
     .right {
         transform: translateX(100vw);
     }
+
+    .font-title {
+        width: 100%;
+    }
 }
 
 @media (hover: none) {
@@ -179,10 +192,5 @@
 /* TITLE INITIALIZATIONS */
 .variable-urbanist {
     font-family: 'Urbanist Variable';
-}
-
-#urbanist-title-text {
-    width: 30%;
-    font-variation-settings: 'wght' 30, 'ital' 0;
 }
 

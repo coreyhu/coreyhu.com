@@ -90,6 +90,14 @@
         float: none;
     }
 
+    #hero-subheader h4 {
+        color: var(--offblack);
+    }
+
+    #hero-superheader {
+        opacity: .6;
+    }
+
     #scroll-indicator {
         display: none;
     }
