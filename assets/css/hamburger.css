@@ -6,6 +6,8 @@
     width: 36px;
     height: 26px;
     padding: 0;
+    margin: 3vh 2% 0 2%;
+    float: right;
 }
 
 #hamburger-icon span {
@@ -61,7 +63,7 @@
 }
 
 #hamburger-icon.hamburger-button-active:hover > span.bar1, #hamburger-icon.hamburger-button-active:hover > span.bar3 {
-    width: 36px !important;
+    width: 36px;
 }
 
 #hamburger-icon.hamburger-button-active:hover > span.bar2 {

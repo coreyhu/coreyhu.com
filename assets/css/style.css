@@ -44,7 +44,7 @@
     --white:#ffffff;
     --light-light-grey: #f1f1f1;
     --light-grey: #bababa;
-    --grey:#898989;
+    --grey:#7f7f7f;
     --dark-grey: #686868;
     --offblack:#121212;
     --crimson: #c82127;
@@ -151,13 +151,14 @@ p a {
     font-family: 'Roboto Slab', Urbanist, serif;
     text-decoration: none;
     background: var(--offblack);
-    color: var(--white) !important;
+    color: var(--white);
     padding: 0 3px;
     border-radius: 2px;
 }
 
 p a:hover {
-    background-color: var(--dark-grey);    
+    background-color: var(--dark-grey);
+    text-decoration: none;   
 }
 
 
@@ -194,9 +195,7 @@ nav {
     z-index: 5;
 }
 
-nav .button {
-    margin: 3vh 2% 0 2%;
-}
+
 
 .no-text-select {
     -webkit-touch-callout: none;
@@ -208,8 +207,7 @@ nav .button {
 }
 
 
-.button {
-    text-decoration: none !important;
+a.button {
     padding: 1vh 1vw;
     margin: 1vh 1vw;
     text-decoration: none;
@@ -217,7 +215,6 @@ nav .button {
     font-weight: 500;
     font-style: normal;
     display: inline-block;
-    cursor: pointer !important;
     text-align: center;
 }
 
@@ -334,10 +331,6 @@ footer .credits {
     transition: opacity 1.25s;
 }
 
-.text-fade-out {
-    opacity: 0 !important;
-}
-
 /* TAG */
 .tagline .tag {
     display: inline-block;
@@ -345,7 +338,7 @@ footer .credits {
     color: var(--crimson);
     border: 2px solid var(--crimson);
     border-radius: 5px;
-    margin: .5vh 2% .5vh 0;
+    margin: .5vh 1% .5vh 1%;
     padding: 5px;
 }
 

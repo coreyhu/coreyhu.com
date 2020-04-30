@@ -60,8 +60,8 @@
     height: 30vh;
 }
 
-.subtitle {
-    color: var(--grey) !important;
+section .subtitle {
+    color: var(--dark-grey);
     margin-top: -1.2vh;
 }
 
@@ -102,6 +102,7 @@
 } 
 
 .font-title {
+    width: 30%;
     text-align: center;
 }
 
@@ -168,11 +169,11 @@
 
 @media (hover: none) {
     .left {
-        transform: none !important;
+        transform: none;
     }
     
     .right {
-        transform: none !important;
+        transform: none;
     }
     
     .font-section:hover .left {

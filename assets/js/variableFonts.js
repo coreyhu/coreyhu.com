@@ -35,7 +35,8 @@ for(i = 0; i < fontList.length; i++) {
     for(j = 0; j < sliders.length; j++) {
         let slider = sliders[j];
         slider.addEventListener("input", function() {
-            axes[font][slider.id] = slider.value;
+            let axisName = slider.id.split("-")[0];
+            axes[font][axisName] = slider.value;
             updateFontTitle(fontElem, axes[font]);
         });
     }

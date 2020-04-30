@@ -1,3 +1,5 @@
+
+// Toggle Hamburger Menu
 function menuToggle(button, menu) {
     button.classList.toggle("hamburger-button-active");
     menu.classList.toggle("menu-active");
@@ -8,6 +10,7 @@ var hamburgerMenu = document.getElementById('hamburger-menu');
 menuButton.addEventListener('click', function() { menuToggle(menuButton, hamburgerMenu); });
 
 
+// Enable Email Copying
 function copyEmail(elem, user, domain) {
     var textArea = document.createElement("textarea");
     textArea.value = user + "@" + domain;
@@ -37,9 +40,4 @@ function copyEmail(elem, user, domain) {
 var footerLink = document.getElementById("footer-email-copy-link");
 footerLink.addEventListener('click', function() { copyEmail(footerLink, "contact", "coreyhu.com"); });
 
-
-var heroLink = document.getElementById("hero-email-copy-link");
-if(heroLink != null) {
-    heroLink.addEventListener('click', function() { copyEmail(heroLink, "contact", "coreyhu.com"); });
-}
 
