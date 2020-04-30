@@ -22,8 +22,8 @@ var fontList = ["urbanist"];
 
 var axes = {
     "urbanist": {
-        "wght": 120,
-        "ital": 1
+        "wght": 77,
+        "ital": 0
     }
 };
 
