@@ -187,11 +187,8 @@
     margin-bottom: 15vh;
 }
 
-#resume-slide {
+#resume-slide  {
     margin-bottom: 10vh;
-    width: 60%;
-    margin: auto;
-    text-align: center;
 }
 
 .portfolio-slide .portfolio-slide-main-content {

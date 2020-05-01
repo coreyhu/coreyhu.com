@@ -36,4 +36,8 @@ body {
 #about-section h5, #about-section h6, 
 #about-section p {
     color: var(--offblack);
-}  
+} 
+
+#resume-link-container p {
+    margin-bottom: 0;
+}

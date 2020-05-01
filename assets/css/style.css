@@ -161,7 +161,6 @@ p a:hover {
     text-decoration: none;   
 }
 
-
 body {
     background-color: var(--offblack);
     margin: 0;
@@ -215,6 +214,13 @@ a.button {
     font-weight: 500;
     font-style: normal;
     display: inline-block;
+    text-align: center;
+}
+
+
+.content-center {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
