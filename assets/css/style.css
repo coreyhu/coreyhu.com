@@ -376,8 +376,12 @@ input.slider:focus {
   }
   
   .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 4px solid var(--offblack);
+    border-radius: 1px;
+    background: var(--white);
     cursor: pointer;
   }
