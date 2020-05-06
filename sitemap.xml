@@ -3,15 +3,28 @@
   <url>
     <loc>https://www.coreyhu.com</loc>
     <changefreq>monthly</changefreq>
+    <lastmod>2020-05-05T23:56:19+00:00</lastmod>
+    <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://www.coreyhu.com/about</loc>
     <changefreq>yearly</changefreq>
+    <lastmod>2020-05-05T23:56:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+    <url>
+    <loc>https://www.coreyhu.com/corey%20hu%20resume.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <lastmod>2020-05-05T23:56:19+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://www.coreyhu.com/machine_kerning</loc>
     <changefreq>yearly</changefreq>
+    <lastmod>2020-05-05T23:56:19+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
 </urlset>
