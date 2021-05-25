@@ -1,387 +1,391 @@
 /* font imports */
 
 @font-face {
-    font-family: Urbanist;
-    src: url('../fonts/Urbanist-Regular.woff2') format('woff2'),
-         url('../fonts/Urbanist-Regular.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: Urbanist;
+  src: url("../fonts/Urbanist-Regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: Urbanist;
-    src: url('../fonts/Urbanist-Light.woff2') format('woff2'),
-         url('../fonts/Urbanist-Light.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
+  font-family: Urbanist;
+  src: url("../fonts/Urbanist-Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: Urbanist;
-    src: url('../fonts/Urbanist-Italic.woff2') format('woff2'),
-         url('../fonts/Urbanist-Italic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
+  font-family: Urbanist;
+  src: url("../fonts/Urbanist-Italic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: Urbanist;
-    src: url('../fonts/Urbanist-Bold.woff2') format('woff2'),
-         url('../fonts/Urbanist-Bold.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+  font-family: Urbanist;
+  src: url("../fonts/Urbanist-Bold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: Urbanist;
-    src: url('../fonts/Urbanist-Black.woff2') format('woff2'),
-         url('../fonts/Urbanist-Black.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+  font-family: Urbanist;
+  src: url("../fonts/Urbanist-Black.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 :root {
-    --white:#ffffff;
-    --light-light-grey: #f1f1f1;
-    --light-grey: #bababa;
-    --grey:#7f7f7f;
-    --dark-grey: #686868;
-    --offblack:#121212;
-    --crimson: #c82127;
+  --white: #ffffff;
+  --light-light-grey: #f1f1f1;
+  --light-grey: #bababa;
+  --grey: #7f7f7f;
+  --dark-grey: #686868;
+  --offblack: #121212;
+  --crimson: #c82127;
 }
 
-
-
-h1, h2, h3, h4, h5, h6, p, a, label, .tag {
-    font-family: Urbanist, Arial, Helvetica, sans-serif;
-    color: var(--white);
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label,
+.tag {
+  font-family: Urbanist, Arial, Helvetica, sans-serif;
+  color: var(--white);
+  margin: 0;
 }
 
-h1, h1 a {
-    font-size: 3rem;
-    font-weight: 300;
-    font-style: normal;
-    margin-bottom: 1vh;
+h1,
+h1 a {
+  font-size: 3rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 1vh;
 }
 
 h1 a {
-    color: var(--white);
+  color: var(--white);
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    text-decoration: underline;
-    color: var(--white);
-    cursor: pointer;
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: underline;
+  color: var(--white);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
-    h1, h1 a {
-        font-size: 3rem;
-    }
+  h1,
+  h1 a {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-
-    h1, h1 a {
-        font-size: 2.5rem;
-    }
+  h1,
+  h1 a {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
-    font-size: 3.375rem;
-    font-weight: 700;
-    font-style: normal;
-    margin-bottom: 0vh;
-    line-height: 1em;
+  font-size: 3.375rem;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0vh;
+  line-height: 1em;
 }
 
 h3 {
-    font-size: 2.25rem;
-    font-weight: 500;
-    font-style: normal;
-    margin-bottom: 2vh;
+  font-size: 2.25rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 2vh;
 }
-
 
 h4 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
 }
-
 
 h5 {
-    font-size: 1.3125rem;
-    font-weight: 300;
-    font-style: normal;
-    margin-bottom: 1.5vh;
+  font-size: 1.3125rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 1.5vh;
 }
 
-h6, label {
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-style: normal;
-    margin: 2vh 0 4vh 0;
+h6,
+label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 2vh 0 4vh 0;
 }
 
 a {
-    cursor: pointer;
-    /* padding: 1vh 0; */
-    text-decoration: none;
+  cursor: pointer;
+  /* padding: 1vh 0; */
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a.no-text-decoration {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    font-size: 1.1rem;
-    font-family: 'Roboto Slab', Urbanist, serif;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    line-height: 2rem;
+  font-size: 1.1rem;
+  font-family: "Roboto Slab", Urbanist, serif;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  line-height: 2rem;
 }
 
 p a {
-    font-family: 'Roboto Slab', Urbanist, serif;
-    text-decoration: none;
-    background: var(--offblack);
-    color: var(--white);
-    padding: 0 3px;
-    border-radius: 2px;
+  font-family: "Roboto Slab", Urbanist, serif;
+  text-decoration: none;
+  background: var(--offblack);
+  color: var(--white);
+  padding: 0 3px;
+  border-radius: 2px;
 }
 
 p a:hover {
-    background-color: var(--dark-grey);
-    text-decoration: none;   
+  background-color: var(--dark-grey);
+  text-decoration: none;
 }
 
 body {
-    background-color: var(--offblack);
-    margin: 0;
-    padding: 0;
+  background-color: var(--offblack);
+  margin: 0;
+  padding: 0;
 }
 
 section {
-    width: 100%;
+  width: 100%;
 }
 
 article {
-    margin-bottom: 5vh;
+  margin-bottom: 5vh;
 }
 
 .skewed {
-    transform: skewY(2.4deg);
-    transform-origin: top right;
-    position: absolute;
-    z-index: 0;
+  transform: skewY(2.4deg);
+  transform-origin: top right;
+  position: absolute;
+  z-index: 0;
 }
 
 /* MENU BUTTON STYLING */
 
 .fixed {
-    position: fixed; 
-    top: 0px; 
+  position: fixed;
+  top: 0px;
 }
 
 nav {
-    width: 100%;
-    z-index: 5;
+  width: 100%;
+  z-index: 5;
 }
-
-
 
 .no-text-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
 
 a.button {
-    padding: 1vh 1vw;
-    margin: 1vh 1vw;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    font-style: normal;
-    display: inline-block;
-    text-align: center;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  display: inline-block;
+  text-align: center;
 }
 
-
 .content-center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .button-secondary {
-    border: 4px solid var(--white);
-    border-radius: 4px;
-    box-sizing: border-box;
-    
-    box-shadow: inset 0 0 0 0 var(--white);
-    transition: all ease-out 0.25s;
-    transition-property: padding, margin, box-shadow;
+  border: 4px solid var(--white);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  box-shadow: inset 0 0 0 0 var(--white);
+  transition: all ease-out 0.25s;
+  transition-property: padding, margin, box-shadow;
 }
 
 .button-secondary:hover {
-    color: var(--offblack);
-    box-shadow: inset 400px 0 0 0 var(--white);
-    padding: 1.2vh 1.2vw;
-    margin: .8vh .8vw;
+  color: var(--offblack);
+  box-shadow: inset 400px 0 0 0 var(--white);
+  padding: 1.2vh 1.2vw;
+  margin: 0.8vh 0.8vw;
 }
 
 .button-secondary:active {
-    padding: .8vh .8vw;
-    margin: 1.2vh 1.2vw;
+  padding: 0.8vh 0.8vw;
+  margin: 1.2vh 1.2vw;
 }
 
 .drop-shadow {
-    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button-dark {
-    color: var(--offblack);
-    border: 4px solid var(--offblack);
-    border-radius: 4px;
-    box-shadow: inset 0 0 0 0 var(--offblack);
+  color: var(--offblack);
+  border: 4px solid var(--offblack);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 var(--offblack);
 }
 
 .button-dark:hover {
-    color: var(--white);
-    box-shadow: inset 400px 0 0 0 var(--offblack);
+  color: var(--white);
+  box-shadow: inset 400px 0 0 0 var(--offblack);
 }
 
 .button-secondary.drop-shadow {
-    box-shadow: inset 0 0 0 0 var(--offblack), 0px 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 0 0 var(--offblack), 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button-secondary.drop-shadow:hover {
-    box-shadow: inset 400px 0 0 0 var(--offblack), 0px 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 400px 0 0 0 var(--offblack), 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .button-dark a {
-    color: var(--offblack);
+  color: var(--offblack);
 }
 
 .button-dark:hover a {
-    color: var(--white);
+  color: var(--white);
 }
 
 .menu-button {
-    float: right;
+  float: right;
 }
 
 .nav-logo {
-    background-color: var(--offblack);
+  background-color: var(--offblack);
 }
 
 .logo-button {
-    margin-left: 5vh;
+  margin-left: 5vh;
 }
 
 #logo {
-    width: 128px;
-    position: relative;
-    top: 2vh;
-    user-select: none;
+  width: 128px;
+  position: relative;
+  top: 2vh;
+  user-select: none;
 }
 
 #logo:hover {
-    filter: invert();
+  filter: invert();
 }
 
 footer {
-    width: 100%;
-    padding-top: 15vh;
-    padding-bottom: 5vh;
-    background-color: var(--offblack);
+  width: 100%;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  background-color: var(--offblack);
 }
 
 #footer-content {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 footer h1 {
-    color: var(--grey);
+  color: var(--grey);
 }
 
 footer .credits {
-    margin-top: 15vh;
-    color: var(--grey);
+  margin-top: 15vh;
+  color: var(--grey);
 }
 
 .email-copy-link {
-    opacity: 1;
-    transition: opacity 1.25s;
+  opacity: 1;
+  transition: opacity 1.25s;
 }
 
 /* TAG */
 .tagline .tag {
-    display: inline-block;
-    font-size: .8em;
-    color: var(--crimson);
-    border: 2px solid var(--crimson);
-    border-radius: 5px;
-    margin: .5vh 1% .5vh 1%;
-    padding: 5px;
+  display: inline-block;
+  font-size: 0.8em;
+  color: var(--crimson);
+  border: 2px solid var(--crimson);
+  border-radius: 5px;
+  margin: 0.5vh 1% 0.5vh 1%;
+  padding: 5px;
 }
 
 /* INPUT DESIGN */
 
 input.slider:focus {
-    outline: none;
+  outline: none;
 }
 
 .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 6px;
-    background: var(--offblack);
-    border-radius: 2px;
-    opacity: .7;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--offblack);
+  border-radius: 2px;
+  opacity: 0.7;
 }
 
 .slider:hover {
-    opacity: 1;
-    cursor: pointer;
+  opacity: 1;
+  cursor: pointer;
 }
 
 @media (hover: none) {
-    .slider:hover {
-        opacity: .7;
-    }
+  .slider:hover {
+    opacity: 0.7;
+  }
 }
 
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 18px;
-    height: 18px;
-    border: 4px solid var(--offblack);
-    border-radius: 1px;
-    background: var(--white);
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    -moz-appearance: none;
-    appearance: none;
-    width: 10px;
-    height: 10px;
-    border: 4px solid var(--offblack);
-    border-radius: 1px;
-    background: var(--white);
-    cursor: pointer;
-  }
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 4px solid var(--offblack);
+  border-radius: 1px;
+  background: var(--white);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 4px solid var(--offblack);
+  border-radius: 1px;
+  background: var(--white);
+  cursor: pointer;
+}

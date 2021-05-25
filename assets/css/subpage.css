@@ -1,197 +1,199 @@
 @font-face {
-    font-family: 'Urbanist Variable';
-    src: url('../fonts/UrbanistGX.ttf') format('truetype');
-    font-weight: 1 999;
+  font-family: "Urbanist Variable";
+  src: url("../fonts/Urbanist-Variable.ttf") format("truetype");
+  font-weight: 1 999;
 }
 
 /* HIGH LEVEL SECTIONS */
 .section-white {
-    background: var(--white);
-    transition: background-color ease-in-out 0.4s;
+  background: var(--white);
+  transition: background-color ease-in-out 0.4s;
 }
 
 .section-white.hoverable:hover {
-    background: var(--light-light-grey);
+  background: var(--light-light-grey);
 }
 
-.section-white h1, .section-white h2, 
-.section-white h3, .section-white h4, 
-.section-white h5, .section-white h6,
-.section-white p, .section-white a,
+.section-white h1,
+.section-white h2,
+.section-white h3,
+.section-white h4,
+.section-white h5,
+.section-white h6,
+.section-white p,
+.section-white a,
 .section-white label {
-    color: var(--offblack);
+  color: var(--offblack);
 }
-
 
 #hero-logo {
-    height: 15vh;
+  height: 15vh;
 }
 
 .section-centered {
-    position: relative;
+  position: relative;
 }
 
 .section-centered .section-content {
-    position: relative;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    text-align: center;
-    top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
 }
 
 .section-content {
-    width: 95%;
-    margin: auto;
-    overflow-x:hidden;
+  width: 95%;
+  margin: auto;
+  overflow-x: hidden;
 }
 
 .row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .height-50 {
-    height: 50vh;
+  height: 50vh;
 }
 
 .height-30 {
-    height: 30vh;
+  height: 30vh;
 }
 
 section .subtitle {
-    color: var(--dark-grey);
-    margin-top: -1.2vh;
+  color: var(--dark-grey);
+  margin-top: -1.2vh;
 }
-
 
 .wide-spacing {
-    letter-spacing: 6px;
+  letter-spacing: 6px;
 }
-
 
 /* FONT PAGES */
 
 .font-section .section-content {
-    padding: 15vh 0;
+  padding: 15vh 0;
 }
 
 .font-section .title.mid {
-    text-align: center;
+  text-align: center;
 }
 
-
-.left, .right {
-    transition: transform ease-out .25s;
+.left,
+.right {
+  transition: transform ease-out 0.25s;
 }
 
 .left {
-    transform: translateX(-50vw);}
+  transform: translateX(-50vw);
+}
 
 .right {
-    transform: translateX(50vw);
+  transform: translateX(50vw);
 }
 
 .font-section:hover .left {
-    transform: translateX(0);
-} 
+  transform: translateX(0);
+}
 
 .font-section:hover .right {
-    transform: translateX(0);
-} 
+  transform: translateX(0);
+}
 
 .font-title {
-    width: 30%;
-    text-align: center;
+  width: 30%;
+  text-align: center;
 }
 
 .font-title.title {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .variable-siders-container {
-    width: 20%;
+  width: 20%;
 }
 
 .slider-container {
-    margin-bottom: 4vh;
-    float: right;
-    width: 100%;
+  margin-bottom: 4vh;
+  float: right;
+  width: 100%;
 }
 
 .slider-container:last-child {
-    margin-bottom: 2vh;
-} 
+  margin-bottom: 2vh;
+}
 
 .slider-container label {
-    width: 5rem;
-    margin-bottom: 0;
+  width: 5rem;
+  margin-bottom: 0;
 }
 
 .buttons-container {
-    width: 20%;
-    text-align: center;
+  width: 20%;
+  text-align: center;
 }
 
 .buttons-container a {
-    display: inline-block;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
-    .left, .right {
-        width: 40%;
-        min-width: 280px;
-        order: 2;
-    }
-    .mid {
-        flex: 0 0 100%;
-        order: 0;
-        margin-bottom: 5vh;
-    }
+  .left,
+  .right {
+    width: 40%;
+    min-width: 280px;
+    order: 2;
+  }
+  .mid {
+    flex: 0 0 100%;
+    order: 0;
+    margin-bottom: 5vh;
+  }
 
-    .font-section .section-content {
-        padding: 10vh 0;
-    }
+  .font-section .section-content {
+    padding: 10vh 0;
+  }
 
-    .left {
-        transform: translateX(-100vw);}
-    
-    .right {
-        transform: translateX(100vw);
-    }
+  .left {
+    transform: translateX(-100vw);
+  }
 
-    .font-title {
-        width: 100%;
-    }
+  .right {
+    transform: translateX(100vw);
+  }
+
+  .font-title {
+    width: 100%;
+  }
 }
 
 @media (hover: none) {
-    .left {
-        transform: none;
-    }
-    
-    .right {
-        transform: none;
-    }
-    
-    .font-section:hover .left {
-        transform: none;
-    } 
-    
-    .font-section:hover .right {
-        transform: none;
-    } 
+  .left {
+    transform: none;
+  }
 
-    .section-white.hoverable {
-        background: var(--light-light-grey);
-    }
+  .right {
+    transform: none;
+  }
+
+  .font-section:hover .left {
+    transform: none;
+  }
+
+  .font-section:hover .right {
+    transform: none;
+  }
+
+  .section-white.hoverable {
+    background: var(--light-light-grey);
+  }
 }
-
 
 /* TITLE INITIALIZATIONS */
 .variable-urbanist {
-    font-family: 'Urbanist Variable';
+  font-family: "Urbanist Variable";
 }
-
