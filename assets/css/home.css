@@ -254,6 +254,9 @@
     color: var(--light-grey);
 }
 
+#truera-slide:hover h2 {
+    color: #2D736D;
+}
 
 #nvidia-slide:hover h2 {
     color: #76b900;
